@@ -52,7 +52,7 @@ Adalah distribution file khusus untuk Java Web. Isi file War dan Jar sebenarnya 
 - main/CounterServlet.java
 - main/HttpMethodServlet.java
 - main/RequestServlet.java
-- main/BodyServlet.java
+- main/ResponseBodyServlet.java
 - main/JsonServlet.java
 - main/StatusCodeServlet.java
 - main/RequestParamServlet.java
