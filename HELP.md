@@ -57,3 +57,4 @@ Adalah distribution file khusus untuk Java Web. Isi file War dan Jar sebenarnya 
 - main/StatusCodeServlet.java
 - main/RequestParamServlet.java
 - main/RequestHeaderServet.java
+- main/RequestFormServet.java

@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 @WebServlet(urlPatterns = "/query")
 public class RequestParamServlet extends HttpServlet {
-    // untuk mendapatkan query param pada Http Request, bisa menggunakan:
+    // getParameter() bisa digunakan untuk mengambil data dari Query Param ataupun dari Form POST Request
     // getParameter(name) --> mengambil parameter berdasarkan nama tertentu
     // getParameterNames() --> mengambil semua nama parameter yang ada
     // getParameterMap() --> mengambil semua parameter beserta valuenya
