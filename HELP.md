@@ -61,3 +61,9 @@ Adalah distribution file khusus untuk Java Web. Isi file War dan Jar sebenarnya 
 - main/UploadFileServlet.java
 - main/DownloadFileServlet.java
 - main/CookieServlet.java
+- main/RedirectServlet.java
+- main/UrlPatternsServlet.java
+- main/LoginServlet.java
+- main/LogoutServlet.java
+- main/SessionServlet.java
+- filter/LogFilter.java
