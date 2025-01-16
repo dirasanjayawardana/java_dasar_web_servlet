@@ -40,10 +40,25 @@ Adalah distribution file khusus untuk Java Web. Isi file War dan Jar sebenarnya 
 
 ## Deploy War File
 - Hapus plugin `spring-boot-maven-plugin` di pom.xml jika ada, karena plugin tersebut membutuhkan main class.
+- Tambahkan `<packaging>war</packaging>` di pom.xml
 - `mvn clean package` membuat War file, akan masuk di folder target, kemudian rename agar lebih mudah.
 - Pindahkan War file ke folder `webapps` di Apache Tomcat, secara otomatis Apache Tomcat akan mendeteksi file baru dan mengekstraknya menjadi sebuah folder.
 - untuk mengaksesnya dengan `http://localhost:8080/nama-folder-atau-war-file-nya`
 - untuk Undeploy, cukup hapus folder dan War filenya di webapps
+- Optional untuk springboot, perlu mengubah kelas utama `@SpringBootApplication` untuk meng-extend `SpringBootServletInitializer`
+```
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+public class SpringbootWarExampleApplication extends SpringBootServletInitializer {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootWarExampleApplication.class, args);
+    }
+}
+```
 
 ## Learning
 - main/HelloServlet.java
